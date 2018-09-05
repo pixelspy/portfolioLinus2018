@@ -28,3 +28,7 @@ a{
   width: inherit;
   color: #fff;
 }
+
+.projectImg{
+  width: 50%;
+}

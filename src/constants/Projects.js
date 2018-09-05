@@ -1,12 +1,20 @@
+import CarlsonGubbe from '../assets/img/linus-carlson-gubbe.jpg'
+import CarlsonNighttime from '../assets/img/linus-carlson-nightime-vip-3.jpg'
+
+
 const projects =
 [
   {
-    name: 'Project 1',
-    url: 'project1'
+    name: 'gubbe',
+    src: CarlsonGubbe,
+    presentation: 'Lorem ipsum dolor sit amet',
+    url: 'gubbe'
   },
   {
-    name: 'Project 2',
-    url: 'project2'
+    name: 'nightime',
+    src: CarlsonNighttime,
+    presentation: 'Lorem ipsum',
+    url: 'nightime'
   },
 ]
 

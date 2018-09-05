@@ -1,13 +1,13 @@
 <template>
   <div class="project page">
-    <div>Projects :
-      <ul
-      v-for= "item in projects"
-      v-bind:key="item.id">
-        <li>{{item.title}}</li>
-      </ul>
-    </div>
-    <!-- <img class="" src= alt=""> -->
+      <p>{{myProject[0].name}}</p>
+    <!-- <div
+    v-for= "project in dataProjects"
+    :key="project.name">
+      <h1>{{project.name}}</h1>
+      <img class="projectImg" :src="project.src" alt="">
+
+    </div> -->
   </div>
 </template>
 
@@ -16,15 +16,19 @@
 
 
 <script>
+import dataProjects from '../constants/Projects'
 export default {
   data() {
-    return {
-      projects: [
-        { id: 0, title: 'Project 1'},
-        { id: 1, title: 'Project 2'},
-      ]
+    return{
+      dataProjects,
+      myProject: null
     }
-
+  },
+  created(){
+    this.myProject = dataProjects.filter(project => project.name === this.$route.params)
+    console.log('myProject', this.myProject)
+    console.log('projectId params', this.$route.params.projectId)
+    console.log(dataProjects)
   }
 }
 </script>
