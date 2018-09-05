@@ -1,0 +1,30 @@
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css";
+
+body {
+  background: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+  height: calc(100% - 50px);
+}
+
+#app {
+  background: rgb(73, 73, 73);
+  width: 50%;
+  padding: 30px;
+  margin: 50px auto 0 auto;
+  height: calc(60% - 50px);
+}
+
+.nav{
+  color: #fff !important;
+}
+a{
+  color: #fff !important;
+}
+
+.page {
+  position: fixed;
+  width: inherit;
+  color: #fff;
+}
