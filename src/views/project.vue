@@ -1,18 +1,9 @@
 <template>
   <div class="project page">
       <p>{{myProject[0].name}}</p>
-    <!-- <div
-    v-for= "project in dataProjects"
-    :key="project.name">
-      <h1>{{project.name}}</h1>
-      <img class="projectImg" :src="project.src" alt="">
-
-    </div> -->
+      <!-- <img class="projectImg" :src="myProject[0].src" alt=""> -->
   </div>
 </template>
-
-
-<!-- "../assets/img/linus-carlson-nightime-vip-3.jpg" -->
 
 
 <script>

@@ -28,10 +28,7 @@ export default {
   },
   components: {
     project
-  },
-  // mounted (){
-  //   console.log(this.dataProjects)
-  // }
+  }
 
 }
 </script>

@@ -1,8 +1,8 @@
 {
   "name": "router-linus",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "",
+  "description": "A portfolio build with Vue.js",
+  "author": "Mahana Delacour <mahana.delacour@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
+    "babel-eslint": "^8.2.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-syntax-jsx": "^6.18.0",
