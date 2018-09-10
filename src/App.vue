@@ -6,9 +6,7 @@
       <router-link v-for= "project in dataProjects" :key= "project.name" :to="{ name: 'project', params: { projectId: project.url }}">
         {{project.name}}
       </router-link>
-
     </div>
-
 
     <transition name="router-anim" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown">
       <router-view></router-view>
@@ -28,7 +26,15 @@ export default {
   },
   components: {
     project
-  }
+  },
+//   watch: {
+//   '$route':  function  (to, from){
+//
+//   }
+// }
+  // mounted (){
+  //   console.log(this.dataProjects)
+  // }
 
 }
 </script>

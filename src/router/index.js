@@ -22,6 +22,7 @@ export default new Router({
       path: '/project/:projectId',
       name: 'project',
       component: Project,
+      props: true
     }
   ]
 })

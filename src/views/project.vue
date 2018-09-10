@@ -12,7 +12,8 @@ export default {
   data() {
     return{
       dataProjects,
-      myProject: null
+      myProject: null,
+      Mehdi: null
     }
   },
   created(){
@@ -21,8 +22,15 @@ export default {
     // console.log('projectId params', this.$route.params.projectId)
     // console.log(dataProjects)
   },
-  mounted(){
 
+  watch: {
+  '$route':  function  (to, from){
+    this.myProject = dataProjects.filter(project => project.name === this.$route.params.projectId)
+      // console.log('fired', this.projectId)
+      // console.log('to', to)
+      // console.log('from', from)
+    }
   }
+
 }
 </script>
