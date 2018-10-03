@@ -9,7 +9,7 @@
     </div>
 
     <transition name="router-anim" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown">
-      <router-view></router-view>
+      <router-view :key="$route.params.projectId"></router-view>
     </transition>
 
   </div>
